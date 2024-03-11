@@ -52,7 +52,7 @@ public class TaskController {
         return new ResponseEntity<>(tasks, HttpStatus.OK);
     }
 
-    @GetMapping("/tasks/search")
+    @GetMapping("/task/search")
     public ResponseEntity<List<Task>> getTasksBySeverityAndAssignee(@RequestParam("severity") String severity,
                                                                     @RequestParam("assignee") String assignee) {
         List<Task> tasks = taskService.findTasksBySeverityAndAssignee(severity, assignee);

@@ -105,7 +105,7 @@ public class TaskServiceImpl implements TaskService {
     }
 
     /**
-     * Method to fetch all tasks based on severity and assignee     *
+     * Method to fetch all tasks based on severity and assignee using custom query
      * @param severity - input
      * @param assignee - input
      * @return List of tasks
